@@ -39,4 +39,8 @@ Allows create of new projects from Command Pallette
 
 Allows installation of migrate-consul from Command Pallette
 
+### 1.0.3
+
+Opens new migration file in editor when generated
+
 ---

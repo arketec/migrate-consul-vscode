@@ -6,7 +6,7 @@
     "name": "Noah Maughan",
     "email": "noah.maughan@gmail.com"
   },
-  "version": "1.0.2",
+  "version": "1.0.3",
   "engines": {
     "vscode": "^1.81.0"
   },

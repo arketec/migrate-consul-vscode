@@ -32,16 +32,24 @@ export async function create(
         : "new-migration"
     } --key "${key ?? "sample"}" --value "${
       value ?? "foo"
-    }" --configPath ${workspacePath} --path ${workspacePath}`
+    }" --configPath ${workspacePath} --path ${workspacePath}`,
+    true
   );
 }
 
-async function execute(cmd: string) {
+async function execute(cmd: string, open?: boolean) {
   try {
     const { stdout, stderr } = await exec(cmd);
     vscode.window.showInformationMessage(stdout);
     if (stderr) {
       vscode.window.showErrorMessage(stderr);
+    }
+    if (open) {
+      await vscode.workspace
+        .openTextDocument(
+          stdout.replace("Generated migration file at ", "").trim()
+        )
+        .then((doc) => vscode.window.showTextDocument(doc));
     }
   } catch (e: any) {
     vscode.window.showErrorMessage(e.message);
