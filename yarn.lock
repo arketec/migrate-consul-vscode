@@ -1734,7 +1734,7 @@ doctrine@^3.0.0:
   dependencies:
     esutils "^2.0.2"
 
-ejs@^3.1.7, ejs@^3.1.9:
+ejs@^3.1.7:
   version "3.1.9"
   resolved "https://btisremoterepo.jfrog.io/btisremoterepo/api/npm/npm/ejs/-/ejs-3.1.9.tgz#03c9e8777fe12686a9effcef22303ca3d8eeb361"
   integrity sha512-rC+QVNMJWv+MtPgkt0y+0rVEIdbtxVADApW9JXrUVlzHetgcyczP/E7DJmWJ4fJCZF2cPcBk0laWO9ZHMG3DmQ==
@@ -2054,13 +2054,6 @@ fs-jetpack@4.3.1:
   dependencies:
     minimatch "^3.0.2"
     rimraf "^2.6.3"
-
-fs-jetpack@^5.1.0:
-  version "5.1.0"
-  resolved "https://btisremoterepo.jfrog.io/btisremoterepo/api/npm/npm/fs-jetpack/-/fs-jetpack-5.1.0.tgz#dcd34d709b69007c9dc2420a6f2b9e8f986cff0d"
-  integrity sha512-Xn4fDhLydXkuzepZVsr02jakLlmoARPy+YWIclo4kh0GyNGUHnTqeH/w/qIsVn50dFxtp8otPL2t/HcPJBbxUA==
-  dependencies:
-    minimatch "^5.1.0"
 
 fs.realpath@^1.0.0:
   version "1.0.0"
@@ -2713,7 +2706,7 @@ minimatch@^3.0.2, minimatch@^3.0.4, minimatch@^3.0.5, minimatch@^3.1.1, minimatc
   dependencies:
     brace-expansion "^1.1.7"
 
-minimatch@^5.0.1, minimatch@^5.1.0:
+minimatch@^5.0.1:
   version "5.1.6"
   resolved "https://btisremoterepo.jfrog.io/btisremoterepo/api/npm/npm/minimatch/-/minimatch-5.1.6.tgz#1cfcb8cf5522ea69952cd2af95ae09477f122a96"
   integrity sha512-lKwV/1brpG6mBUFHtb7NUmtABCb2WZZmm2wNiOA5hAb8VdCS4B3dtMWyvcoViccwAW/COERjXLt0zP1zXUN26g==

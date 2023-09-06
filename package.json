@@ -1,8 +1,12 @@
 {
   "name": "migrate-consul-vscode",
   "displayName": "migrate-consul-vscode",
-  "description": "",
-  "version": "1.0.0",
+  "description": "VSCode extension for Migrate Consul",
+  "author": {
+    "name": "Noah Maughan",
+    "email": "noah.maughan@gmail.com"
+  },
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.81.0"
   },
@@ -50,7 +54,6 @@
     ]
   },
   "scripts": {
-    "vscode:prepublish": "yarn run build",
     "build": "tsc -p ./",
     "watch": "tsc -watch -p ./",
     "pretest": "yarn run compile && yarn run lint",
@@ -59,8 +62,7 @@
     "vscode:package": "vsce package",
     "vscode:publish": "vsce publish",
     "webpack": "rm -rf ./dist/* && webpack --mode development",
-    "package": "rm -rf *.vsix && yarn webpack && vsce package",
-    "publish": "yarn package && yarn vscode:publish"
+    "package": "rm -rf *.vsix && webpack --mode production --devtool hidden-source-map && vsce package"
   },
   "devDependencies": {
     "@types/glob": "^8.1.0",
@@ -80,10 +82,14 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
-    "ejs": "^3.1.9",
-    "fs-jetpack": "^5.1.0",
     "migrate-consul": "^3.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arketec/migrate-consul-vscode"
+  },
+  "publisher": "arketec",
+  "license": "MIT"
 }
