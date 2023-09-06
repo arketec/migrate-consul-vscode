@@ -8,6 +8,8 @@ It provides a sidebar to create migration files
 
 Generate simple migration files with a button click
 
+![demo](docs/demo.gif)
+
 ## Requirements
 
 [typescript](https://www.npmjs.com/package/typescript) must be installed globally
